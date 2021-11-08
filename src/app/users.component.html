@@ -1,0 +1,6 @@
+<h1>Welcome</h1>
+<input *ngIf="show" type="text" [(ngModel)]="userName" />
+<button *ngIf="show" (click)="onAddUser()" >Agregar usuario</button>
+<div *ngFor="let user of users">
+  {{ user }}
+</div>
